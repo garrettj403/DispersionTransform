@@ -16,7 +16,7 @@ This is a quick example showing the power of the dispersion-compensated algorith
 
 For this example, we will look at the frequency-domain of a waveguide cavity resonator, as shown below.
 
-<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-distance-domain.jpg" width="500">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-freq-domain.jpg" width="500">
 
 In the distance-domain, we can see a series of reflections corresponding to different signal paths within the resonator. (I.e., the first peak is the signal passing straight through the resonator, the second peak is the signal that undergoes ones internal back-and-forth reflection, etc.)
 
