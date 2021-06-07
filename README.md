@@ -14,15 +14,15 @@ Example: Waveguide Cavity Resonator
 
 This is a quick example showing the power of the dispersion-compensated algorithm. See [the included notebook](https://github.com/garrettj403/DispersionTransform/blob/main/examples/example-waveguide-cavity.ipynb) for more information.
 
-For this example, we will start with the frequency-domain response of a simple waveguide cavity resonator, as shown below. Whenever the length of the cavity is an integer number of the guided wavelength divided by two, there is a peak in transmission.
+For this example, we will start with the frequency-domain response of a simple waveguide cavity resonator, as shown below. This is a 1 inch long WR-2.8 cavity. Whenever the length of the cavity is an integer number of the guided wavelength divided by two, there is a peak in transmission.
 
 <img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-freq-domain.jpg" width="500">
 
-In the distance-domain, we can see a series of reflections corresponding to different signal paths within the resonator. The first peak is the signal passing straight through the resonator, the second peak is the signal that undergoes ones internal back-and-forth reflection, etc.
+In the distance-domain, we can see a series of reflections corresponding to different signal paths within the resonator. The first peak is the signal passing straight through the resonator (distance = 1 inch), the second peak is the signal that undergoes ones internal back-and-forth reflection (distance = 3 inch), etc.
 
 <img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-distance-domain.jpg" width="500">
 
-In the distance-domain, we can easily isolate the first peak and then return to the frequency-domain.
+In the distance-domain, we can easily isolate the first peak and then return to the frequency-domain. The isolated reflection provides a very close match to theory.
 
 <img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-peak1.jpg" width="500">
 
