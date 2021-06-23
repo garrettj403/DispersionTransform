@@ -7,7 +7,7 @@ This package allows you to map dispersive waveguide data from the frequency-doma
 
 For more information, see: 
 
-   - J. D. Garrett and C. E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides",](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Processing Letters*, Jun. 2021, doi: [10.1109/LSP.2021.3086695](https://doi.org/10.1109/LSP.2021.3086695).
+   - J. D. Garrett and C. E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides",](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Processing Letters*, vol. 28, pp. 1175-1179, Jun. 2021, doi: [10.1109/LSP.2021.3086695](https://doi.org/10.1109/LSP.2021.3086695).
 
 Example: Waveguide Cavity Resonator
 -----------------------------------
@@ -49,8 +49,10 @@ If you use this code, please cite the following paper:
       author       = {John D. Garrett and
                       Edward Tong},
       title        = {{A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides}},
+      volume       = {28},
+      pages        = {1175--1179},
       month        = jun,
-      year         = 2021,
+      year         = {2021},
       journal      = {IEEE Signal Processing Letters},
       doi          = {10.1109/LSP.2021.3086695},
       url          = {https://ieeexplore.ieee.org/document/9447194}
