@@ -15,15 +15,13 @@ Example: Simple Waveguide Section
 Transmission through a 10" long gold-plated WR-2.8 waveguide:
 
 <p align="center">
-<img src="
-https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/simple-waveguide-frequency.jpg" width="400">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/simple-waveguide-frequency.jpg" width="400">
 </p>
 
 Below, the time-domain response (calculated by an IFFT) is compared to the distance-domain response. Notice how much sharper the distance-domain response is.
 
 <p align="center">
-<img src="
-https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/simple-waveguide-time-vs-distance.jpg" width="600">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/simple-waveguide-time-vs-distance.jpg" width="600">
 </p>
 
 Example: Waveguide Cavity Resonator
