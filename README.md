@@ -9,6 +9,23 @@ For more information, see:
 
    - J. D. Garrett and C. E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides",](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Processing Letters*, vol. 28, pp. 1175-1179, Jun. 2021, doi: [10.1109/LSP.2021.3086695](https://doi.org/10.1109/LSP.2021.3086695).
 
+Example: Simple Waveguide Section
+---------------------------------
+
+Transmission through a 10" long gold-plated WR-2.8 waveguide:
+
+<p align="center">
+<img src="
+https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/simple-waveguide-frequency.png" width="400">
+</p>
+
+Below, the time-domain response (calculated by an IFFT) is compared to the distance-domain response. Notice how much sharper the distance-domain response is.
+
+<p align="center">
+<img src="
+https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/simple-waveguide-time-vs-distance.png" width="600">
+</p>
+
 Example: Waveguide Cavity Resonator
 -----------------------------------
 
@@ -17,25 +34,25 @@ This is a quick example showing the power of the dispersion-compensated algorith
 For this example, we will start with the frequency-domain response of a simple waveguide cavity resonator, as shown below. This is a 1 inch long WR-2.8 cavity. Whenever the length of the cavity is an integer number of the guided wavelength divided by two, there is a peak in transmission.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-freq-domain.jpg" width="500">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-freq-domain.jpg" width="600">
 </p>
 
 In the distance-domain, we can see a series of reflections corresponding to different signal paths within the resonator. The first peak is the signal passing straight through the resonator (distance = 1 inch), the second peak is the signal that undergoes ones internal back-and-forth reflection (distance = 3 inch), etc.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-distance-domain.jpg" width="500">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-distance-domain.jpg" width="600">
 </p>
 
 In the distance-domain, we can easily isolate the first peak and then return to the frequency-domain. The isolated reflection provides a very close match to theory.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-peak1.jpg" width="500">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-peak1.jpg" width="600">
 </p>
 
 Likewise, we can easily isolate the 6th peak and return to the frequency-domain. This is impossible in the time-domain because there is too much broadening and overlap between adjacent reflections.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-peak6.jpg" width="500">
+<img src="https://raw.githubusercontent.com/garrettj403/DispersionTransform/main/examples/results/cavity-peak6.jpg" width="600">
 </p>
 
 Note: This example is similar to the example presented by [Garrett & Tong 2021](https://ieeexplore.ieee.org/document/9447194), but it is slightly different (e.g., different dimensions, different iris parameters, etc.). Please see this paper for more information.
