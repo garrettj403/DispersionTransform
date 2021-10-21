@@ -7,4 +7,7 @@ __pycache__/
 
 examples/
 
+new-version.md
+
 *.egg-info/
+dist/
