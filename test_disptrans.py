@@ -52,7 +52,7 @@ def test_lossless_waveguide(debug=False):
 
     # Debug
     if debug:
-        import matplotlib.pyplot as plt 
+        import matplotlib.pyplot as plt
         plt.figure()
         plt.plot(f[mask] / 1e9, unwrap(s21f[mask]), 'k--', label="Original")
         plt.plot(f[mask] / 1e9, unwrap(fresp[mask]), 'r', alpha=0.5, label="Recovered")
@@ -106,7 +106,7 @@ def test_lossy_waveguide(debug=False):
 
     # Debug
     if debug:
-        import matplotlib.pyplot as plt 
+        import matplotlib.pyplot as plt
         plt.figure()
         plt.plot(f[mask] / 1e9, unwrap(s21f[mask]), 'k--', label="Original")
         plt.plot(f[mask] / 1e9, unwrap(fresp[mask]), 'r', alpha=0.5, label="Recovered")
