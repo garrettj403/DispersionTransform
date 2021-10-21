@@ -1,6 +1,10 @@
 Dispersion-Compensated Algorithm
 ================================
 
+[![PyPI version](https://badge.fury.io/py/disptrans.svg)](https://badge.fury.io/py/disptrans)
+[![ci](https://github.com/garrettj403/DispersionTransform/actions/workflows/ci.yml/badge.svg)](https://github.com/garrettj403/DispersionTransform/actions/workflows/ci.yml)
+[![flake8](https://github.com/garrettj403/DispersionTransform/actions/workflows/linter.yml/badge.svg)](https://github.com/garrettj403/DispersionTransform/actions/workflows/linter.yml)
+
 *Dispersion-Compensated Algorithm for the Analysis for Electromagnetic Waveguides*
 
 This package allows you to map dispersive waveguide data from the frequency-domain to distance-domain, and vice versa. The benefit of this approach, compared to a standard Fourier transform, is that this algorithm compensates for dispersion. Normally, dispersion causes signals in the time-domain to broaden as the propagate, making it difficult to isolate or supress adjacent signals. In the distance-domain, the signals remain sharp, even over long distances, allowing you to easily identify, isolate or suppress specific signals.
@@ -8,6 +12,27 @@ This package allows you to map dispersive waveguide data from the frequency-doma
 For more information, see: 
 
    - J. D. Garrett and C. E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides",](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Processing Letters*, vol. 28, pp. 1175-1179, Jun. 2021, doi: [10.1109/LSP.2021.3086695](https://doi.org/10.1109/LSP.2021.3086695).
+
+Getting Started
+---------------
+
+You can install the DispersionTransform package using ``pip``:
+
+   ```bash
+   # to install the latest release (from PyPI)
+   pip install disptrans
+
+   # to install the latest commit (from GitHub)
+   git clone https://github.com/garrettj403/DispersionTransform.git
+   cd DispersionTransform
+   pip install -e .
+
+   # to install dependencies for examples
+   pip install -e .[examples]
+
+   # to install dependencies for testing
+   pip install -e .[testing]
+   ```
 
 Example: Simple Waveguide Section
 ---------------------------------
