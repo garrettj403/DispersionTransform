@@ -113,7 +113,7 @@ If you use this code, please cite the following paper:
 
     @article{Garrett2021,
       author       = {John D. Garrett and
-                      C. Edward Tong},
+                      Cheuk-yu Edward Tong},
       title        = {{A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides}},
       volume       = {28},
       pages        = {1175--1179},
