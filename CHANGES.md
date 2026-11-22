@@ -1,5 +1,5 @@
-v0.1.0 (unreleased)
-===================
+v0.1.0 (21-Nov-2026)
+====================
 
 - Add input validation: ``freq2distance`` and ``distance2freq`` now raise ``ValueError`` for mismatched lengths, non-uniform ``x``, ``x`` with fewer than 2 points (``distance2freq``), complex or non-monotonic ``beta``, and non-finite values. Previously, some of these cases silently returned incorrect results.
 - ``freq2distance``: ``x`` is now optional (see ``default_distance``).
@@ -7,9 +7,11 @@ v0.1.0 (unreleased)
 - ``distance2freq``: use ``np.gradient`` for the phase constant step, which also fixes the case where ``beta`` has only 2 points.
 - Speed up the transforms (parallel Numba kernels, cached compilation).
 - Add ``disptrans.__version__``.
-- Packaging: replace ``setup.py`` with ``pyproject.toml`` (fixes installation with setuptools >= 72); require Python >= 3.10.
+- Packaging: replace ``setup.py`` with ``pyproject.toml`` (``setup.py`` relied on the deprecated ``setuptools.command.test``); require Python >= 3.10.
 - CI: test Python 3.10-3.13 and update GitHub Actions.
+- Add GitHub Actions workflow to publish releases to PyPI.
 - Tests: support scikit-rf >= 1.0.
+- README: add usage section and license badge; fix typos, broken link, and citation.
 
 v0.0.1 (21-Oct-2021)
 ====================
