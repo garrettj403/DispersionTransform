@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "disptrans"
+dynamic = ["version"]
+description = "Dispersion-compensated algorithm for electromagnetic waveguides"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.md"]
+authors = [{name = "John Garrett", email = "garrettj403@gmail.com"}]
+requires-python = ">=3.10"
+dependencies = ["numpy", "numba"]
+keywords = ["dispersion", "waveguide", "signal-processing", "dsp"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.optional-dependencies]
+testing = ["pytest", "scipy", "scikit-rf"]
+examples = ["matplotlib", "scipy", "scikit-rf", "SciencePlots"]
+
+[project.urls]
+Homepage = "https://github.com/garrettj403/DispersionTransform/"
+Changelog = "https://github.com/garrettj403/DispersionTransform/blob/main/CHANGES.md"
+"Issue Tracker" = "https://github.com/garrettj403/DispersionTransform/issues"
+
+[tool.setuptools]
+py-modules = ["disptrans"]
+
+[tool.setuptools.dynamic]
+version = {attr = "disptrans.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["test_disptrans.py"]

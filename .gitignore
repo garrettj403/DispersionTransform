@@ -5,9 +5,10 @@ __pycache__/
 
 *.pyc
 
-examples/
+references/
 
 new-version.md
 
 *.egg-info/
+build/
 dist/

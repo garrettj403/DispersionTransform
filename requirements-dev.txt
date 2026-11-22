@@ -3,3 +3,4 @@ numpy
 scipy
 pytest
 scikit-rf
+flake8
