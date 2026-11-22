@@ -4,6 +4,7 @@ Dispersion-Compensated Algorithm
 [![PyPI version](https://badge.fury.io/py/disptrans.svg)](https://badge.fury.io/py/disptrans)
 [![ci](https://github.com/garrettj403/DispersionTransform/actions/workflows/ci.yml/badge.svg)](https://github.com/garrettj403/DispersionTransform/actions/workflows/ci.yml)
 [![flake8](https://github.com/garrettj403/DispersionTransform/actions/workflows/linter.yml/badge.svg)](https://github.com/garrettj403/DispersionTransform/actions/workflows/linter.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/garrettj403/DispersionTransform/blob/main/LICENSE.md)
 
 *Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides*
 
